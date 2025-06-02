@@ -90,11 +90,10 @@
                             <p class="card-text"><%= review.comment%></p>
                             <p class="starability-result" data-rating="<%= review.rating%>"><%= review.rating%></p>
                         </div>
-                        <form action="/listings/<%= data._id %>/reviews/<%= review._id %>?_method=DELETE" method="post">
+                            <form action="/listings/<%= data._id %>/reviews/<%= review._id %>?_method=DELETE" method="post">
                             <button class="btn btn-sm btn-danger ms-3 mb-2">Delete</button>
                         </form>
                     </div>
-
                 <% } %>
                 </div>
             </div> 
